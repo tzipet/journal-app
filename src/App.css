@@ -8,21 +8,32 @@
 }
 
 .App-header {
-  background-color: #455A64;
-  height: 150px;
+  background-color: #E3F3FB;
+  height: 130px;
   padding: 20px;
-  color: white;
+  color: black;
+  margin-top: 40px;
+  
 }
 
 .App-title {
   font-size: 1.5em;
+
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+
+.GridList {
+  padding-top: 50px;
 }
+
+
+.descritpionPar {
+  color: black;
+  font-size: 20px;
+}
+

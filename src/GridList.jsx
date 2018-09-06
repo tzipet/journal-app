@@ -17,6 +17,7 @@ const styles = theme => ({
 	gridList: {
 		width: 500,
 		height: 450,
+
 	},
 	icon: {
 		color: 'rgba(255, 255, 255, 0.54)',
@@ -29,13 +30,13 @@ function TitlebarGridList(props) {
 
 	return (
 		<div className = {classes.root}>
-		  <GridList cellHeight = {180} className = {classes.gridList}>
+		  <GridList cellHeight = {250} className = {classes.gridList} spacing = {10}>
 		   {papers.map(paper => (
 		   	 <GridListTile key = {paper.id}>
 		   	  <img src={paper.imageUrl} alt = {paper.title} />
 		   	  <GridListTileBar 
 		   	  	title = {paper.title}
-		   	  	//subtitle = {<span>by {.author}</span>}
+		   	  	subtitle = {'Author'}
 		   	  	
 		   	  />
 		   	 </GridListTile> 	
