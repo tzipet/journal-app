@@ -1,4 +1,4 @@
-import image from './paper.jpeg'
+import image from './paper1.jpeg'
 
 const papers = [
 	{

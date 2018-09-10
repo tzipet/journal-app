@@ -10,13 +10,26 @@ const styles = theme => ({
 	root: {
 		display: 'flex',
 		flexWrap: 'wrap',
-		justifyContent: 'space-around',
+		justify: 'space-around',
 		overflow: 'hidden',
-		backgroundColor: theme.palette.background.paper,
+		backgroundColor: '#033B56',
+		container: 'true',
+		direction: "column",
+		alignItems: "flex-start",
+		marginLeft: '40px',
+
+		
+
+
 	},
 	gridList: {
-		width: 500,
-		height: 450,
+		width: '100%',
+		height: '100%',
+		
+		
+
+		
+
 
 	},
 	icon: {
@@ -30,14 +43,13 @@ function TitlebarGridList(props) {
 
 	return (
 		<div className = {classes.root}>
-		  <GridList cellHeight = {250} className = {classes.gridList} spacing = {10}>
+		  <GridList cellHeight = {250} className = {classes.gridList} spacing = {40} cols = {3} >
 		   {papers.map(paper => (
 		   	 <GridListTile key = {paper.id}>
 		   	  <img src={paper.imageUrl} alt = {paper.title} />
 		   	  <GridListTileBar 
 		   	  	title = {paper.title}
 		   	  	subtitle = {'Author'}
-		   	  	
 		   	  />
 		   	 </GridListTile> 	
 		   	)

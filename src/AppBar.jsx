@@ -11,10 +11,14 @@ import MenuIcon from '@material-ui/icons/Menu';
 const styles = {
   root: {
     flexGrow: 1,
+    textAlign: 'left',
+
 
   },
   flex: {
     flexGrow: 1,
+     
+
   },
 };
 
@@ -22,7 +26,7 @@ function ButtonAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: '#455A64' }} >
+      <AppBar position="static" style={{ backgroundColor: '#044362' }} >
         <Toolbar>
           <Typography variant="title" color="inherit" className={classes.flex}>
             Journal App
