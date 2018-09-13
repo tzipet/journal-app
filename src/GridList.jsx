@@ -9,32 +9,40 @@ import papers from './papers'
 const styles = theme => ({
 	root: {
 		display: 'flex',
-		flexWrap: 'wrap',
 		justify: 'space-around',
 		overflow: 'hidden',
-		backgroundColor: '#033B56',
-		container: 'true',
-		direction: "column",
-		alignItems: "flex-start",
-		marginLeft: '40px',
-
-		
+		backgroundColor: 'white',
+		direction: "row",
+		alignItems: "center",
+		marginLeft: '50px',
+		marginRight: '50px',
+		color: '#033B56',
 
 
 	},
 	gridList: {
-		width: '100%',
-		height: '100%',
-		
+		width: 'auto',
+		height: 'auto',
 		
 
-		
+
 
 
 	},
-	icon: {
-		color: 'rgba(255, 255, 255, 0.54)',
+
+	img: {
+	width: '100%',
+    borderRadius: '30px',
+		
+    
 	},
+
+	gridListTile: {
+		
+	}
+
+
+
 });
 
 function TitlebarGridList(props) {
@@ -43,13 +51,14 @@ function TitlebarGridList(props) {
 
 	return (
 		<div className = {classes.root}>
-		  <GridList cellHeight = {250} className = {classes.gridList} spacing = {40} cols = {3} >
+		  <GridList  cellHeight = {250} className = {classes.gridList} spacing = {40} cols = {3} >
 		   {papers.map(paper => (
-		   	 <GridListTile key = {paper.id}>
-		   	  <img src={paper.imageUrl} alt = {paper.title} />
+		   	 <GridListTile className = {classes.gridListTile} key = {paper.id}>
+		   	  <img className= {classes.img} src={paper.imageUrl} alt = {paper.title} />
 		   	  <GridListTileBar 
 		   	  	title = {paper.title}
 		   	  	subtitle = {'Author'}
+
 		   	  />
 		   	 </GridListTile> 	
 		   	)

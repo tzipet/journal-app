@@ -5,6 +5,7 @@ import GridList from './GridList.jsx';
 import AppBar from './AppBar.jsx';
 
 
+
 class App extends Component {
   render() {
     return (
@@ -12,7 +13,9 @@ class App extends Component {
           <AppBar></AppBar>
          <h1 className ="App-header">
            Journal App
-            <p className = "descritpionPar">A decentralized platform for submitting and download scientific journals and research papers</p>
+            <p className = "descritpionPar"> <div>A decentralized platform for submitting and download <br />
+                scientific journals and research papers</div>
+            </p>
          </h1> 
 
       

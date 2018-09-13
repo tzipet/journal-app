@@ -26,10 +26,10 @@ function ButtonAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: '#044362' }} >
+      <AppBar position="static" style={{ backgroundColor: 'white', color: "#044362"}} >
         <Toolbar>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            Journal App
+            Home
           </Typography>
         </Toolbar>
       </AppBar>
