@@ -4,7 +4,8 @@ import {withStyles} from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import papers from './papers'
+import papers from './papers.js';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 const styles = theme => ({
 	root: {
@@ -32,14 +33,14 @@ const styles = theme => ({
 
 	img: {
 	width: '100%',
-    borderRadius: '30px',
-		
     
 	},
 
-	gridListTile: {
-		
-	}
+
+	tile: {
+        borderRadius: 8,
+        width: '100%',
+    }
 
 
 
@@ -51,15 +52,19 @@ function TitlebarGridList(props) {
 
 	return (
 		<div className = {classes.root}>
-		  <GridList  cellHeight = {250} className = {classes.gridList} spacing = {40} cols = {3} >
+		  <GridList  cellHeight = {250} className = {classes.gridList} spacing = {72} cols = {3} >
 		   {papers.map(paper => (
-		   	 <GridListTile className = {classes.gridListTile} key = {paper.id}>
+		   	 <GridListTile className = {classes.gridListTile} key = {paper.id} classes={{ tile: classes.tile}}>
+
+		   	<Link to = { '/paper/'}>
+
 		   	  <img className= {classes.img} src={paper.imageUrl} alt = {paper.title} />
 		   	  <GridListTileBar 
 		   	  	title = {paper.title}
 		   	  	subtitle = {'Author'}
 
 		   	  />
+		   	</Link>
 		   	 </GridListTile> 	
 		   	)
 		   )
