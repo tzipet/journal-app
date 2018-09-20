@@ -9,50 +9,86 @@ const styles = theme => ({
 
 	root: {
 		display: 'flex',
+		direction: 'row',
+		justify: 'space-around',
+		alignItems: 'flex-start',
+		margin: '16px',
+		spacing: '8',
+		borderColor: '#044362',
+		borderStyle: 'none',
+		borderRadius: 8,
+		borderWidth: 1
 	},
 
 	image: {
-		width: '50%',
-		heigth: '50%',
+		width: '15%',
+		height: '15%',
+		borderRadius: 8,
+		
+
 	},
 
 	description: {
-		color: "white",
+		textAlign: 'left',
+		marginLeft: '16px',
+		borderRadius: 8,
+		marginRight: 256
+		
+	
+		},
+
+	title: {
+		color: '#044362'
 	},
 
+	author: {
+		color: ' #044362'
+	},
 
+	abstract: {
+		color: '#044362',
+		textDecorationLine: 'underline'
+	},
 
+	abstract1: {
+		color: '#044362'
+	},
 })
 
-
-
 function PaperDetails(props) {
-	const { classes } = props;
+	const { classes, match } = props
+
+	
+
+	const filteredPapers = papers.filter(paper => match.params.id == paper.id)
+
+	const paper = filteredPapers[0]
 
 	return (
-		<div className = { classes.root }>
-			{papers.map(paper =>(
-				<div key = { paper.id } className = { classes.details }>
+		<div className = { classes.root } spacing = {16}>
+
 					<img className = {classes.image} src = {paper.imageUrl} alt = {paper.title} />
 
-					<div className = {{description: classes.description }}>
-
-					  <Typography className = {classes.title}>
-					  	Title: {paper.title}
-					  </Typography> 
-					  <Typography className = { classes.author}>
-					  	Author: {paper.author}
-					  </Typography>
+					<div className = {classes.description}>
+					  <Typography variant="title" className = {classes.title}>
+					  	 {paper.title} 
+					  </Typography> <br/>
+					  <Typography variant="subheading" className = { classes.author}>
+					  	{paper.author}
+					  </Typography> <br/>
 					  <Typography className = { classes.abstract}>
-					  	Abstract: {paper.abstract}
+					  	Abstract:
+					  </Typography>
+					  <Typography className = { classes.abstract1}>
+					  	 {paper.abstract}
 					  </Typography>
 					 </div>
 
-					</div>	  
+			
 					
-				)
-			)  
-		} 
+				
+			
+		 
 		</div>
 		)
 	}

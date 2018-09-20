@@ -7,7 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom';
+import './App.css'; 
 
 const styles = {
   root: {
@@ -18,9 +19,12 @@ const styles = {
   },
   flex: {
     flexGrow: 1,
+    padding: 20,
      
 
   },
+
+
 };
 
 function ButtonAppBar(props) {
@@ -29,13 +33,11 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" style={{ backgroundColor: 'white', color: "#044362"}} >
         <Toolbar>
-        <Router>
-         <Link to = "/">
+         <NavLink to = "/"  className="Nav_linkHomeButton">
           <Typography variant="title" color="inherit" className={classes.flex}>
             Home
           </Typography>
-        </Link>  
-        </Router>  
+        </NavLink>   
         </Toolbar>
       </AppBar>
     </div>

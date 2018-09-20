@@ -13,7 +13,7 @@ import '../App.css';
 	        Journal App
 	            <p className = "descritpionPar"> 
 	            	<div>
-	            	A decentralized platform for submitting and download <br />
+	            	A decentralized platform for submitting and download <br/>
 	                scientific journals and research papers
 	                </div>
 	            </p>

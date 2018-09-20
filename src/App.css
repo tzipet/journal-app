@@ -38,5 +38,20 @@
   font-size: 20px;
 }
 
+.Nav_linkHomeButton:link {
+  text-decoration: none;
+  color: #044362;
+}
 
+.Nav_linkHomeButton:visited {
+  text: #044362;
+
+} 
+
+.Nav_linkHomeButton:hover {
+  color: white;
+  background-color: #044362;
+  transition: 0.8s;
+  transform: translate(10px);
+}
 

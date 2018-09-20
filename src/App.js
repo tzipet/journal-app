@@ -18,7 +18,7 @@ class App extends Component {
           <div>      
             <Switch>
                <Route exact path = "/" component = {Home}/>
-               <Route  path='/paper' component={ paperDetails }/>
+               <Route  path='/paper/:id' component={ paperDetails }/>
                <Route render={() => <h1>Page not found</h1>} />
             </Switch>
           </div> 
