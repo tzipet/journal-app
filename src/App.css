@@ -7,15 +7,7 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: white;
-  height: 80px;
-  padding: 20px;
-  color: #033B56;
-  margin-top: 40px;
-  font-size: 60px;
-  
-}
+
 
 .App-title {
   font-size: 1.5em;
@@ -35,7 +27,10 @@
 
 .descritpionPar {
   color: #033B56;
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 60px;
+  padding: 20px;
+
 }
 
 .Nav_linkHomeButton:link {
@@ -56,7 +51,7 @@
   text-decoration: underline ;
 }
 
-.gridListTile:hover .overlay {
+.Nav_linkPaper:hover .overlay {
     height: 100%;
   }
 
@@ -65,18 +60,19 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #044362;
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
+  opacity: 0.8;
   }
 
   
 
   .hoverText {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
   top: 50%;
   left: 50%;

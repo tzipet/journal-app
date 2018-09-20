@@ -5,7 +5,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import papers from './papers.js';
-import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 const styles = theme => ({
 	root: {
@@ -15,8 +15,8 @@ const styles = theme => ({
 		backgroundColor: 'white',
 		direction: "row",
 		alignItems: "center",
-		marginLeft: '50px',
-		marginRight: '50px',
+		marginLeft: 48,
+		marginRight: 48,
 		color: 'black',
 
 
@@ -37,7 +37,7 @@ const styles = theme => ({
 	tile: {
         borderRadius: 8,
         width: '100%',
-        
+
     },
 
 
@@ -53,12 +53,15 @@ function TitlebarGridList(props) {
 		  <GridList  cellHeight = {250} className = {classes.gridList} spacing = {72} cols = {3} >
 		   {papers.map(paper => (
 		   	 <GridListTile className = {classes.gridListTile} key = {paper.id} classes={{ tile: classes.tile}}>
-		   		<NavLink to = {`/paper/${paper.id}`} className = 'Nav_linkPaper'>
+		   		<Link to = {`/paper/${paper.id}`} className = 'Nav_linkPaper'>
+		   		  <div>		
 		   	  		<img className= {classes.img} src={paper.imageUrl} alt = {paper.title} />
 		   	  		<div className='overlay'>
-		   	  		<div className='hoverText'>{paper.abstract}</div>
-				   	</div>  
-		   		</NavLink>
+		   	  		<div className='hoverText'>{paper.title}<br/><br/>{paper.author}</div>
+				   	</div>
+				   	<GridListTileBar title = {paper.headline} /> 
+				  </div> 	  
+		   		</Link>
 		   	</GridListTile> 	
 		   	)
 		   )

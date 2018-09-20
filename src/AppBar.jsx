@@ -13,16 +13,28 @@ import './App.css';
 const styles = {
   root: {
     flexGrow: 1,
-    textAlign: 'left',
+    display: 'flex',
+    direction: 'row', 
+    alignItems: "space-between",
+    justify: 'center',
+    marginLeft: 48,
+    marginRight: 48,
+ 
 
 
   },
   flex: {
-    flexGrow: 1,
     padding: 20,
+
+    flexGrow: 1,
      
 
   },
+
+  grow: {
+    flexGrow:1,
+    marginRight: 64,
+  }
 
 
 };
@@ -31,13 +43,16 @@ function ButtonAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: 'white', color: "#044362"}} >
+      <AppBar position="static" style={{ backgroundColor: 'white', color: "#033B56"}} >
         <Toolbar>
          <NavLink to = "/"  className="Nav_linkHomeButton">
           <Typography variant="title" color="inherit" className={classes.flex}>
             Home
           </Typography>
-        </NavLink>   
+        </NavLink> 
+         <Typography variant="display1" color="inherit" className={classes.grow}>
+            Journal App
+          </Typography> 
         </Toolbar>
       </AppBar>
     </div>

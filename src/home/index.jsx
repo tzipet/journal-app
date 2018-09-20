@@ -9,15 +9,13 @@ import '../App.css';
 		console.log('classes', classes)
 		return (
 	<div>
-		<h1 className ="App-header">
-	        Journal App
+		
 	            <p className = "descritpionPar"> 
 	            	<div>
 	            	A decentralized platform for submitting and download <br/>
 	                scientific journals and research papers
 	                </div>
 	            </p>
-	     </h1> 
 
 	      <div className="GridList">
 	      <GridList></GridList>

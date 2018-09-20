@@ -17,7 +17,10 @@ const styles = theme => ({
 		borderColor: '#044362',
 		borderStyle: 'none',
 		borderRadius: 8,
-		borderWidth: 1
+		borderWidth: 1,
+		marginLeft: 48,
+    	marginRight: 48,
+    	paddingTop: 16,
 	},
 
 	image: {

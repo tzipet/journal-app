@@ -3,6 +3,7 @@ import image from './paper1.jpeg'
 const papers = [
 	{
 		id: '1234',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
@@ -11,6 +12,7 @@ const papers = [
 	},
 	{
 		id: '1235',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
@@ -19,6 +21,7 @@ const papers = [
 	},
 	{
 		id: '1236',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
@@ -26,6 +29,7 @@ const papers = [
 	},
 	{
 		id: '1237',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
@@ -33,6 +37,7 @@ const papers = [
 	},
 	{
 		id: '1238',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
@@ -40,6 +45,7 @@ const papers = [
 	},
 	{
 		id: '1239',
+		headline: 'Electronic Commerce 2018',
 		title: 'Electronic Commerce 2018: A Managerial and Social Networks Perspective',
 		imageUrl: image,
 		author: 'Dimosthenis Botsaris',
