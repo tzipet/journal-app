@@ -12,7 +12,7 @@ const styles = theme => ({
 		display: 'flex',
 		justify: 'space-around',
 		overflow: 'hidden',
-		backgroundColor: 'white',
+		backgroundColor: 'black',
 		direction: "row",
 		alignItems: "center",
 		marginLeft: 48,

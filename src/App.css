@@ -26,26 +26,30 @@
 
 
 .descritpionPar {
-  color: #033B56;
-  font-size: 30px;
-  margin-top: 60px;
-  padding: 20px;
+  color: white;
+  font-size: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding: 64px;
+  background-image: url("decentralized.png");
+  margin-top: -30px;
+  border-radius: 8px;
 
 }
 
 .Nav_linkHomeButton:link {
   text-decoration: none;
-  color: #044362;
+  color: white;
 }
 
 .Nav_linkHomeButton:visited {
-  text: #044362;
+  text: white;
 
 } 
 
 .Nav_linkHomeButton:hover {
-  color: white;
-  background-color: #044362;
+  color: #033B56;
+  background-color: white;
   transition: 0.8s;
   transform: translate(10px);
   text-decoration: underline ;
@@ -60,7 +64,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #044362;
+  background-color: #033B56;
   overflow: hidden;
   width: 100%;
   height: 0;

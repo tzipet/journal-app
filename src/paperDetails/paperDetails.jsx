@@ -41,20 +41,20 @@ const styles = theme => ({
 		},
 
 	title: {
-		color: '#044362'
+		color: 'white'
 	},
 
 	author: {
-		color: ' #044362'
+		color: ' white'
 	},
 
 	abstract: {
-		color: '#044362',
+		color: 'white',
 		textDecorationLine: 'underline'
 	},
 
 	abstract1: {
-		color: '#044362'
+		color: '#white'
 	},
 })
 
@@ -82,7 +82,7 @@ function PaperDetails(props) {
 					  <Typography className = { classes.abstract}>
 					  	Abstract:
 					  </Typography>
-					  <Typography className = { classes.abstract1}>
+					  <Typography color="white" className = { classes.abstract1}>
 					  	 {paper.abstract}
 					  </Typography>
 					 </div>
