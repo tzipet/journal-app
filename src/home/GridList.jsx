@@ -24,15 +24,12 @@ const styles = theme => ({
 	gridList: {
 		width: 'auto',
 		height: 'auto',
-		
-
-
-
 
 	},
 
 	img: {
 	width: '100%',
+	display: 'block',
     
 	},
 
@@ -40,11 +37,10 @@ const styles = theme => ({
 	tile: {
         borderRadius: 8,
         width: '100%',
+        
     },
 
-   	titleWrap: {
 
-    }
 
 });
 
@@ -58,15 +54,10 @@ function TitlebarGridList(props) {
 		   {papers.map(paper => (
 		   	 <GridListTile className = {classes.gridListTile} key = {paper.id} classes={{ tile: classes.tile}}>
 		   		<NavLink to = {`/paper/${paper.id}`} className = 'Nav_linkPaper'>
-
 		   	  		<img className= {classes.img} src={paper.imageUrl} alt = {paper.title} />
-
-				   	  <GridListTileBar 
-				   	  	classes = {{titleWrap: classes.titleWrap}}
-				   	  	title = {paper.title}
-				   	  	subtitle = {paper.author}
-				   	  />
-
+		   	  		<div className='overlay'>
+		   	  		<div className='hoverText'>{paper.abstract}</div>
+				   	</div>  
 		   		</NavLink>
 		   	</GridListTile> 	
 		   	)
