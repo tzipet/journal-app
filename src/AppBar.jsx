@@ -12,11 +12,10 @@ import './App.css';
 
 const styles = {
   root: {
-    flexGrow: 1,
-    display: 'flex',
-    direction: 'row', 
-    alignItems: "space-between",
-    justify: 'center',
+    // flexGrow: 1,
+    // direction: 'row', 
+    // alignItems: "space-between",
+    // justify: 'center',
     marginLeft: 48,
     marginRight: 48,
  
@@ -24,7 +23,7 @@ const styles = {
 
   },
   flex: {
-    padding: 20,
+    //padding: 20,
 
     flexGrow: 1,
      
@@ -32,10 +31,14 @@ const styles = {
   },
 
   grow: {
-    flexGrow:1,
-    marginRight: 64,
-  }
+    flex: 'auto',
+    // marginRight: 64,
+  },
 
+  toolbar: {
+    display: 'flex',
+    alignItems: 'center',
+  }
 
 };
 
@@ -44,15 +47,20 @@ function ButtonAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{ backgroundColor: 'white', color: "#033B56"}} >
-        <Toolbar>
-         <NavLink to = "/"  className="Nav_linkHomeButton">
-          <Typography variant="title" color="inherit" className={classes.flex}>
-            Home
-          </Typography>
-        </NavLink> 
-         <Typography variant="display1" color="inherit" className={classes.grow}>
+        <Toolbar className={classes.toolbar}>
+          <NavLink to = "/"  className="Nav_linkHomeButton">
+            <Typography variant="title" color="inherit">
+              Home
+            </Typography>
+          </NavLink> 
+          <Typography variant="display1" color="inherit" className={classes.grow}>
             Journal App
           </Typography> 
+          <NavLink to="" className="Nav_linkHomeButton">
+            <Typography variant="title" color="inherit">
+              Register
+            </Typography>
+          </NavLink>
         </Toolbar>
       </AppBar>
     </div>

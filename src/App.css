@@ -33,6 +33,12 @@
 
 }
 
+.Nav_linkHomeButton {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
 .Nav_linkHomeButton:link {
   text-decoration: none;
   color: #044362;
@@ -47,7 +53,7 @@
   color: white;
   background-color: #044362;
   transition: 0.8s;
-  transform: translate(10px);
+  /*transform: translate(10px);*/
   text-decoration: underline ;
 }
 
